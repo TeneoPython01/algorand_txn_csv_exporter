@@ -54,6 +54,6 @@ for my_wallet in my_wallets:
     my_time = datetime.now().hour*10000+datetime.now().minute*100+datetime.now().second
     
     #filename syntax is "algo_export_[first 6 chars of wallet address]_[date]_[time].csv"
-    filename = './algo_export_'+my_wallet[0:6]+'_'str(my_date)+'_'+str(my_time)+'.csv'
+    filename = './algo_export_'+my_wallet[0:6]+'_'+str(my_date)+'_'+str(my_time)+'.csv'
     df_full.to_csv(filename)
     print('export complete: ' + filename + '\n\n')
