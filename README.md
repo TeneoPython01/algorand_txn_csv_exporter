@@ -1,5 +1,4 @@
-# algorand_txn_csv_exporter
-# (Algorand transaction CSV exporter)
+# algorand_txn_csv_exporter - (Algorand transaction CSV exporter)
 
 This script will export transactions for an algorand wallet to a CSV file.  
 
