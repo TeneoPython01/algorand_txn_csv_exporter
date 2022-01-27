@@ -1,7 +1,8 @@
-# ALGORAND TRANSACTION CSV EXPORTER (and associated ASAs like YLDY, etc.)
+# ALGORAND TRANSACTION CSV EXPORTER (works for all ASAs like YLDY, etc.)
 
 <h3> What does it do?</h3>
 <li>This script will export all transactions for an algorand wallet to a CSV file.  </li>
+<li>All ASAs (Algorand Standard Assets) in the Algorand wallet will be included in the export.  This includes assets like Yieldly (YLDY), Smile Coin (SMILE), Algogems (GEMS), Akita, Lofty, etc....
 <li>It is intended to assist with filing taxes.  For example, I used it to help find Yieldly (YLDY) and other ASA defi activity that wasn't automatically imported by Koinly.io (a crypto tax web service).</li>
 <li>It uses the v1 API from algoexplorer.io (which is free and doesn't require any special credentials)</li>
 
