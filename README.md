@@ -1,20 +1,19 @@
-# algorand_txn_csv_exporter - (Algorand transaction CSV exporter)
+# ALGORAND TRANSACTION CSV EXPORTER
 
-This script will export transactions for an algorand wallet to a CSV file.  
+# What does it do?
+<li>This script will export transactions for an algorand wallet to a CSV file.  </li>
+<li>It is intended to assist with filing taxes.</li>
+<li>It uses the v1 API from algoexplorer.io (which is free and doesn't require any special credentials)</li>
 
-It is intended to assist with filing taxes.
+# How to use it:
+<li>Simply update the wallet variable with the wallet address(es) you're interested in, and then run the script.</li>
+<li>The packages used by the code are common ones, but you may need to install them if you don't already have them: pandas, pandas.io.json, requests, datetime, and numpy
 
-It uses API from algoexplorer.io (v1).
+# Additional Notes:
+<li>The last several columns in the export that start with "z_" are fields I added to the API feed at the end.  They are the most commonly used fields, and should help you find what you're looking for more easily.</li>
+<li>Optionally, you can update the timezone adjustment variable with the number of hours your timezone is from UDT (not required)</li>
+<li>The datetime fields that start with "z_" are in the format that Excel uses.  Simply change the format mask in Excel for these fields to datetime to see it formatted.</li>
 
-Simply update the wallet variable with the wallet address(es) you're interested in, and then run the script.
-
-# To do:
-<li>Pare down columns to just the essential ones</li>
-<li>Time zone support (currently the timestamp field is UDT)</li>
-<li>Time format for the datetime is in unix/epoch time, which should be converted to a conventional datetime format.  To do this in Excel, the formula is:</li>
-<p><p>=(((((LEFT(<b>A2</b>,10)&"."&RIGHT(<b>A2</b>,3))*1)/60)/60)/24)+DATE(1970,1,1) <i>where <b>A2</b> is the cell you want to convert</i></p></p>
-<li>Change amounts to whole units (currently the API shows in millionths, so .000001 ALGO currently shows as "1" in the amount column)</li>
-
-# DID THIS SCRIPT HELP YOU?
-I hope it did. It helped me too! If you feel inclined to tip, here is an Algo wallet address I set up specifically for tips (not necessary but certainly welcome!)
-5Q2RGRRXLC3643TFP22Y5LITE5P3SPQLZO2U4KLDALLMUMZWCOEFVEKQEQ
+# Did this script help you?  Want to tip me?
+I hope this helped you; It helped me too! If you feel inclined to tip, here is an Algo wallet address I set up specifically for tips (not necessary but certainly welcome!):
+<p>5Q2RGRRXLC3643TFP22Y5LITE5P3SPQLZO2U4KLDALLMUMZWCOEFVEKQEQ</p>
