@@ -1,4 +1,4 @@
-# ALGORAND TRANSACTION CSV EXPORTER
+# ALGORAND TRANSACTION CSV EXPORTER (and associated ASAs like YLDY, etc.)
 
 <h3> What does it do?</h3>
 <li>This script will export all transactions for an algorand wallet to a CSV file.  </li>
