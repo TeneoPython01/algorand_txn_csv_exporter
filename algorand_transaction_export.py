@@ -71,8 +71,6 @@ for my_wallet in my_wallets:
     df_full['z_fee_whole'] = df_full['fee']/1000000.000000
     df_full['z_type'] = np.where(df_full['z_scanned_wallet']==df_full['from'],'send',np.where(df_full['z_scanned_wallet']==df_full['to'],'receive','other'))
 
-    df_smaller = df_full[df_full.columns[:-7]]
-
     #create variables for date and time in yyyymmdd and hhmmss format to use in the exported CSV filename
     my_date = datetime.now().year*10000+datetime.now().month*100+datetime.now().day
     my_time = datetime.now().hour*10000+datetime.now().minute*100+datetime.now().second
